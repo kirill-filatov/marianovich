@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=https://www.etsy.com/shop/marianovich">
+    <script>
+      window.location.href = "https://www.etsy.com/shop/marianovich";
+    </script>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="https://www.etsy.com/shop/marianovich">click here</a>.</p>
+  </body>
+</html>
