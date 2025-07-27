@@ -22,22 +22,30 @@
     // Delay redirect to allow analytics to fire
     setTimeout(function() {
       window.location.href = "https://www.etsy.com/shop/marianovich";
-    }, 3000); // 1 second delay
+    }, 3000); // 3 second delay
   </script>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      padding-top: 80px;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #0c1f1c;
       color: #333;
     }
 
+    .container {
+      max-width: 100%;
+      padding: 40px 20px;
+    }
+
     .logo {
-      max-width: 250px;
+      width: 100%;
+      max-width: 1600px; /* Prevent from exceeding original width */
       height: auto;
-      margin-bottom: 30px;
+      display: block;
+      margin: 0 auto 30px;
     }
 
     a {
@@ -48,18 +56,28 @@
     a:hover {
       text-decoration: underline;
     }
+
+    p {
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Logo Hyperlink -->
-  <a href="https://www.etsy.com/shop/marianovich">
-    <img src="https://github.com/kirill-filatov/marianovich/blob/3f8b8240e36dbce14b9ed32f5f1c8ea2d522c8e7/images/etsy%20banner.jpg?raw=true" alt="Marianovich Logo" class="logo">
-  </a>
+  <div class="container">
+    <!-- Logo Hyperlink -->
+    <a href="https://www.etsy.com/shop/marianovich">
+      <img
+        src="https://github.com/kirill-filatov/marianovich/blob/3f8b8240e36dbce14b9ed32f5f1c8ea2d522c8e7/images/etsy%20banner.jpg?raw=true"
+        alt="Marianovich gems Logo"
+        class="logo"
+      >
+    </a>
 
-  <!-- Text Link -->
-  <p>We're redirecting you to <strong>Marianovich gems on Etsy</strong>.<br>
-  If you are not redirected in a moment, <a href="https://www.etsy.com/shop/marianovich">click this link to continue</a>.</p>
+    <!-- Text Link -->
+    <p>We're redirecting you to <strong>Marianovich gems on Etsy</strong>.<br>
+    If you are not redirected in a moment, <a href="https://www.etsy.com/shop/marianovich">click this link to continue</a>.</p>
+  </div>
 
 </body>
 </html>
